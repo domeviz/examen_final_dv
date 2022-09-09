@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<form th:action="@{/vuelos/reservar}" th:object="${comprapasaje}" th:method="POST">
+	<form  class="form-label" th:action="@{/vuelos/reservar}" th:object="${comprapasaje}" th:method="POST">
 		<table>
 			<tr>
 				<td><label>Numero de vuelo</label> </td>
@@ -22,6 +22,6 @@
 				<td><input type="text" id="cantidad" th:field="${comprapasaje.cantidad}"></td>
 			</tr>
 		</table>
-		<input type="submit" value="Reservar">
+		<input type="submit" value="Reservar"  class="btn btn-danger">
 	</form>
 </body>

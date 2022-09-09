@@ -11,8 +11,8 @@
 </head>
 
 <body>
-	<form th:action="@{/vuelos/buscarVuelos}" th:object="${vuelo}" th:method="GET">
-		<table>
+	<form class="form-label" th:action="@{/vuelos/buscarVuelo}" th:object="${vuelo}" th:method="GET" >
+		<table class="table table-success table-striped">
 
 			<tr>
 				<td><label>Origen</label> </td>
@@ -27,7 +27,7 @@
 				<td><input type="text" id="fecha" th:field="${vuelo.fechaVuelo}"></td>
 			</tr>
 		</table>
-		<input type="submit" value="BUSCAR"> 
+		<input type="submit" value="Buscar"  class="btn btn-danger"> 
 	</form>
 
 </body>

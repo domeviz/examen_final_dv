@@ -16,7 +16,7 @@ public class VueloServiceImpl implements IVueloService {
 
 	@Autowired
 	private IVueloRepository iVueloRepository;
-
+	
 	@Override
 	public void insertar(Vuelo vuelo) {
 		// TODO Auto-generated method stub
